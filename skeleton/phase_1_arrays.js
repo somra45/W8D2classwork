@@ -25,9 +25,9 @@ Array.prototype.transpose = function(){
     let height = this.length
     let width = this[0].length
     const arr = this
-    let matrix = new Array(height) 
+    let matrix = new Array(width) 
         for (let i = 0; i < width; i++) {
-            matrix[i] = new Array
+            matrix[i] = new Array(height)
         };
     
     for (let i = 0; i < width; i++) {
@@ -39,10 +39,9 @@ Array.prototype.transpose = function(){
 };
 
 const matrix = [
-    [1, 2],
-    [4, 5],
-    [7, 8]
+    [1, 2, 3],
+    [4, 5, 5],
   ];
 
-console.log(matrix.transpose());
+// console.log(matrix.transpose());
 
